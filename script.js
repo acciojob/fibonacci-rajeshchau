@@ -1,20 +1,16 @@
 function fibonacci(num) {
-// your code here
-	let newarray = [0,1]
-	let first = 1
+  if (num === 1) return 0;
+  if (num === 2) return 1;
 
-	while(true){
-		if (newarray[newarray.length-1]===num) {
-			return first
-		}
-		else if (newarray[newarray.length-1]>num) {
-			return false
-			
-		}
-		newarray.push(first);
-		first += newarray[newarray.length-1];
-		
-	}
+  let a = 0, b = 1, result;
+
+  for (let i = 3; i <= num; i++) {
+    result = a + b;
+    a = b;
+    b = result;
+  }
+
+  return result;
 }
 
 module.exports = fibonacci;
