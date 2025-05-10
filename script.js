@@ -7,7 +7,8 @@ function fibonacci(num) {
 		if (newarray[newarray.length-1]===num) {
 			return first
 		}
-		else if () {
+		else if (newarray[newarray.length-1]>num) {
+			return false
 			
 		}
 		first += newarray[newarray.length-1];
