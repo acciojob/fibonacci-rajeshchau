@@ -4,8 +4,11 @@ function fibonacci(num) {
 	let first = 1
 
 	while(true){
-		if (arr[newarray[newarray.length-1] === num]) {
+		if (newarray[newarray.length-1]===num) {
 			return first
+		}
+		else if () {
+			
 		}
 		first += newarray[newarray.length-1];
 		
