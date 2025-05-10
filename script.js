@@ -11,6 +11,7 @@ function fibonacci(num) {
 			return false
 			
 		}
+		newarray.push(first);
 		first += newarray[newarray.length-1];
 		
 	}
